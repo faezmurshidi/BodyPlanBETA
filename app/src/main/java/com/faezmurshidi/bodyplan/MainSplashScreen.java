@@ -20,11 +20,11 @@ public class MainSplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.main_splash_screen);
+//        setContentView(R.layout.main_splash_screen);
 
-        imageView= (ImageView)findViewById(R.id.drawer_icon);
+        //imageView= (ImageView)findViewById(R.id.drawer_icon);
 
-        imageView.setImageResource(R.drawable.smartcare);
+        //imageView.setImageResource(R.drawable.smartcare);
 
 
 
@@ -44,7 +44,7 @@ public class MainSplashScreen extends Activity {
                     sleep(500);
 
                     // After 5 seconds redirect to another intent
-                    Intent i=new Intent(getBaseContext(),MainActivity.class);
+                    Intent i=new Intent(getBaseContext(),MainTab.class);
                     startActivity(i);
 
                     //Remove activity

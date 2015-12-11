@@ -11,19 +11,19 @@
     <item
         android:id="@+id/navigation_item_3"
         android:icon="@drawable/ic_allergy"
-        android:title="myMedical Data" />
+        android:title="Goals" />
     <item
         android:id="@+id/navigation_item_4"
         android:icon="@drawable/ic_emergency"
-        android:title="Emergency" />
+        android:title="Calorie Counter" />
     <item
         android:id="@+id/navigation_item_5"
         android:icon="@drawable/ic_find"
-        android:title="Medical Directory" />
+        android:title="Motivation" />
     <item
         android:id="@+id/navigation_item_6"
         android:icon="@drawable/ic_share"
-        android:title="Share" />
+        android:title="About" />
     <item
         android:id="@+id/navigation_item_7"
         android:icon="@drawable/ic_setting"
