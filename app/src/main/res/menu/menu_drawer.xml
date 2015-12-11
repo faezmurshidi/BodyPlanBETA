@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--All the items added without any grouping-->
+
+
+    <item
+        android:id="@+id/navigation_item_1"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_item_3"
+        android:icon="@drawable/ic_allergy"
+        android:title="myMedical Data" />
+    <item
+        android:id="@+id/navigation_item_4"
+        android:icon="@drawable/ic_emergency"
+        android:title="Emergency" />
+    <item
+        android:id="@+id/navigation_item_5"
+        android:icon="@drawable/ic_find"
+        android:title="Medical Directory" />
+    <item
+        android:id="@+id/navigation_item_6"
+        android:icon="@drawable/ic_share"
+        android:title="Share" />
+    <item
+        android:id="@+id/navigation_item_7"
+        android:icon="@drawable/ic_setting"
+        android:title="Settings" />
+
+
+
+</menu>

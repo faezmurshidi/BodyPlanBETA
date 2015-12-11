@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:id="@+id/space2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_margin="8dp"
+        android:onClick="emergencydetail"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView"
+            android:layout_weight="0"
+            android:src="@drawable/emergency_contact"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Emergency Profile"
+            android:id="@+id/textView"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_margin="8dp"
+        android:onClick="Insurance"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView2"
+            android:layout_weight="0"
+            android:src="@drawable/ic_insurance"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Insurance Details"
+            android:id="@+id/textView28"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:onClick="sos">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView4"
+            android:layout_weight="0"
+            android:src="@drawable/ic_emergencyprofile"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="SOS"
+            android:id="@+id/textView29"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:onClick="emergencyLock">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView10"
+            android:layout_weight="0"
+            android:src="@drawable/ic_emergencyprofile"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Set Emergency Lockscreen"
+            android:id="@+id/textView9"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

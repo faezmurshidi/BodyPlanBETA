@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    android:gravity="center"
+    android:focusableInTouchMode="false">
+
+    <ImageView
+        android:layout_width="261dp"
+        android:layout_height="163dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:src="@drawable/smartcare_black"
+        android:layout_weight="0.35" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Feedback"
+        android:id="@+id/feedback"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:textColorHighlight="#fffce4b8"
+        android:background="#ff77ff93" />
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="About Us"
+        android:id="@+id/aboutus"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="#ff60f3ff"
+        android:layout_marginTop="5dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>
