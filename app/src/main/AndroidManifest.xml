@@ -28,6 +28,8 @@
         <activity android:name=".MainTab"/>
         <activity android:name=".Settings"/>
         <activity android:name=".UserProfile"/>
+        <activity android:name=".Motivation"/>
+        <activity android:name=".FoodScanner"/>
 
     </application>
 

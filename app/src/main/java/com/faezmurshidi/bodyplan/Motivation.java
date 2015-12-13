@@ -8,10 +8,18 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.Random;
 
 
-public class Emergency extends MainActivity {
+public class Motivation extends MainActivity {
 
+    ImageView ivIcon;
+    TextView tvItemName;
+    Button btnShare;
 
 
     @Override
@@ -19,10 +27,50 @@ public class Emergency extends MainActivity {
         super.onCreate(savedInstanceState);
         LayoutInflater inflater = (LayoutInflater) this
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_emergency, null, false);
+        View contentView = inflater.inflate(R.layout.motivation, null, false);
         mDrawerLayout.addView(contentView, 0);
 
+
+        //setTitle(listArray[position]);
+
+        btnShare = (Button) findViewById(R.id.buttonShare);
+        final String[] tipstitle = getResources().getStringArray(R.array.inspiration);
+        Random ran = new Random();
+        int maxIndex = tipstitle.length;
+        final int generatedIndex = ran.nextInt(maxIndex);
+
+
+
+
+
+
+        tvItemName = (TextView) findViewById(R.id.textView8);
+        tvItemName.setText(tipstitle[generatedIndex]);
+
+        btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent share = new Intent(android.content.Intent.ACTION_SEND);
+                share.setType("text/plain");
+                share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+
+                // Add data to the intent, the receiving app will decide
+                // what to do with it.
+                share.putExtra(Intent.EXTRA_TEXT, tipstitle[generatedIndex]+"\n");
+
+                share.putExtra(Intent.EXTRA_TEXT, "Get BodyPlan now - your complete body app.");
+
+                startActivity(Intent.createChooser(share, "Share link!"));
+            }
+        });
+
+
+
     }
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

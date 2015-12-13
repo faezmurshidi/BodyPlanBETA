@@ -57,13 +57,7 @@ public class Settings extends MainActivity {
 
     }
 
-    public void gotohealthvault(View view) {
 
-        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://https://www.healthvault.com/my/en"));
-        startActivity(i);
-
-
-    }
 
     public void share(View view) {
 
@@ -73,9 +67,9 @@ public class Settings extends MainActivity {
 
         // Add data to the intent, the receiving app will decide
         // what to do with it.
-        share.putExtra(Intent.EXTRA_SUBJECT, "Get SmartCare now! your secure mobile personal health record solution.\n");
+        share.putExtra(Intent.EXTRA_SUBJECT, "Get BodyPlan Now!\n");
 
-        share.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.faezmurshidi.bodyalarm");
+        //share.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.faezmurshidi.bodyalarm");
 
         startActivity(Intent.createChooser(share, "Share link!"));
 

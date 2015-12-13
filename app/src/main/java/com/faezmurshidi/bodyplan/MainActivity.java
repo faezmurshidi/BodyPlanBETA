@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState);setContentView(R.layout.activity_main);
         mToolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(mToolbar);
         mDrawer = (NavigationView) findViewById(R.id.main_drawer);
@@ -86,22 +85,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         if (mSelectedId == R.id.navigation_item_1) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, MainTab.class);
+            intent = new Intent(this, FoodScanner.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_4) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, Emergency.class);
+            intent = new Intent(this, FoodScanner.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_5) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, Emergency.class);
+            intent = new Intent(this, Motivation.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_6) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, Emergency.class);
+            intent = new Intent(this, Motivation.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_7) {

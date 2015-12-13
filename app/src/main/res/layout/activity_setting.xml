@@ -119,35 +119,4 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:weightSum="1"
-        android:layout_margin="8dp"
-        android:clickable="true"
-        android:onClick="gotohealthvault">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/imageView6"
-            android:layout_weight="0"
-            android:src="@drawable/ic_swap"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="8dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:text="Go to Microsoft HealthVault"
-            android:id="@+id/textView16"
-            android:layout_weight="0"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="8dp" />
-
-    </LinearLayout>
-
 </LinearLayout>
