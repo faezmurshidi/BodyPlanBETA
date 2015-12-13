@@ -10,15 +10,15 @@
 
     <item
         android:id="@+id/navigation_item_3"
-        android:icon="@drawable/ic_allergy"
+        android:icon="@drawable/ic_nutrition"
         android:title="Nutrition" />
     <item
         android:id="@+id/navigation_item_4"
-        android:icon="@drawable/ic_emergency"
+        android:icon="@drawable/ic_calorie"
         android:title="Calorie Counter" />
     <item
         android:id="@+id/navigation_item_5"
-        android:icon="@drawable/ic_find"
+        android:icon="@drawable/ic_motivation"
         android:title="Motivation" />
     <item
         android:id="@+id/navigation_item_6"

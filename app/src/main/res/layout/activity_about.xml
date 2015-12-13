@@ -13,7 +13,7 @@
         android:id="@+id/imageView3"
         android:layout_gravity="center_horizontal"
         android:padding="12dp"
-        android:src="@drawable/smartcare_black"
+        android:src="@drawable/mybodyplan"
         android:layout_weight="0.35" />
 
     <Button

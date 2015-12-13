@@ -11,7 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/drawer_icon"
-        android:src="@drawable/smartcare"
+        android:src="@drawable/mybodyplan"
         android:layout_weight="0.23" />
 
 </LinearLayout>
