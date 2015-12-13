@@ -78,41 +78,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Blood Type"
+            android:text="Weight:"
             android:id="@+id/textView11" />
-
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/blood"
-            android:spinnerMode="dropdown" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Phone number: "
-            android:id="@+id/textView21" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/phone"
-            android:inputType="number" />
+            android:id="@+id/weight"
+            android:inputType="number"
+            android:hint="in Kilo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Address: "
+            android:text="Height:"
             android:id="@+id/textView22" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/address"
-            android:inputType="text" />
+            android:id="@+id/height"
+            android:hint="in Meter"
+            android:inputType="numberDecimal" />
 
         <android.support.design.widget.FloatingActionButton
             android:src="@drawable/ic_add"

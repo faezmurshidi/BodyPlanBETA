@@ -30,6 +30,7 @@
         <activity android:name=".UserProfile"/>
         <activity android:name=".Motivation"/>
         <activity android:name=".FoodScanner"/>
+        <activity android:name=".BMI"/>
 
     </application>
 

@@ -61,23 +61,6 @@
                     android:id="@+id/agesex"
                     android:layout_margin="3dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Bloodtype:A"
-                    android:id="@+id/blood"
-                    android:layout_margin="3dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Address: "
-                    android:id="@+id/address"
-                    android:singleLine="true"
-                    android:layout_margin="3dp" />
-
             </LinearLayout>
         </LinearLayout>
 

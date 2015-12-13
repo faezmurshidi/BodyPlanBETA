@@ -20,7 +20,7 @@ import java.util.List;
 public class UserProfile extends MainActivity {
 
     SharedPreferences.Editor edit;
-    EditText name,age,phone,note;
+    EditText name,age,weight,height;
     Spinner sex,blood;
 
     @Override
@@ -38,33 +38,23 @@ public class UserProfile extends MainActivity {
 
         name = (EditText)findViewById(R.id.name);
         age = (EditText)findViewById(R.id.age);
-        phone = (EditText)findViewById(R.id.phone);
-        note = (EditText)findViewById(R.id.address);
+        weight = (EditText)findViewById(R.id.weight);
+        height = (EditText)findViewById(R.id.height);
 
         sex = (Spinner)findViewById(R.id.sex);
-        blood = (Spinner)findViewById(R.id.blood);
+
 
         List<String> sexchoose = new ArrayList<>();
         sexchoose.add("Male");
         sexchoose.add("Feemale");
 
-        List<String> bloodtype = new ArrayList<>();
-        bloodtype.add("A-");
-        bloodtype.add("A+");
-        bloodtype.add("AB-");
-        bloodtype.add("AB+");
-        bloodtype.add("B-");
-        bloodtype.add("B+");
-        bloodtype.add("O-");
-        bloodtype.add("O+");
+
 
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sexchoose);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sex.setAdapter(dataAdapter);
 
-        ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, bloodtype);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        blood.setAdapter(dataAdapter1);
+
 
 
 
@@ -91,9 +81,9 @@ public class UserProfile extends MainActivity {
 
         edit.putString("name", name.getText().toString());
         edit.putString("age",age.getText().toString());
-        edit.putString("phone",phone.getText().toString());
-        edit.putString("address",note.getText().toString());
-        edit.putString("blood",blood.getSelectedItem().toString());
+        edit.putString("weight",weight.getText().toString());
+        edit.putString("height",height.getText().toString());
+
         edit.putString("sex", sex.getSelectedItem().toString());
 
 

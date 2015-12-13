@@ -5,7 +5,9 @@ package com.faezmurshidi.bodyplan;
  */
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -42,10 +44,22 @@ public class MainSplashScreen extends Activity {
                 try {
                     // Thread will sleep for 5 seconds
                     sleep(500);
-
                     // After 5 seconds redirect to another intent
-                    Intent i=new Intent(getBaseContext(),MainTab.class);
-                    startActivity(i);
+                    SharedPreferences preferences = getSharedPreferences("PREF_NAME", Context.MODE_PRIVATE);
+                    boolean isLoggedIn = preferences.getBoolean("isLoggedIn", false);
+                    if (isLoggedIn) {
+                        //target to home page/login
+                        Intent i=new Intent(MainSplashScreen.this, MainTab.class);
+                        startActivity(i);
+
+
+                    } else {
+                        //target to  first time login page
+                        Intent i=new Intent(MainSplashScreen.this,UserProfile.class);
+                        startActivity(i);
+                    }
+
+
 
                     //Remove activity
                     finish();

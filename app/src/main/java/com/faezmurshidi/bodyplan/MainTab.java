@@ -73,8 +73,7 @@ public class MainTab extends MainActivity {
 
         names = (TextView)findViewById(R.id.name);
         ages = (TextView)findViewById(R.id.agesex);
-        addresss = (TextView)findViewById(R.id.address);
-        bloodtypes = (TextView)findViewById(R.id.blood);
+
         ivImage = (ImageView)findViewById(R.id.ic_photo);
 
         image = preferences.getString("image_data","");
@@ -87,8 +86,7 @@ public class MainTab extends MainActivity {
 
         names.setText(name);
         ages.setText(age + " , " + sex);
-        bloodtypes.setText("Blood Type: " + bloodtype);
-        addresss.setText(add);
+      
 
 
         
