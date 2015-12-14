@@ -15,7 +15,7 @@
     <item
         android:id="@+id/navigation_item_4"
         android:icon="@drawable/ic_calorie"
-        android:title="Calorie Counter" />
+        android:title="Exercise" />
     <item
         android:id="@+id/navigation_item_5"
         android:icon="@drawable/ic_motivation"

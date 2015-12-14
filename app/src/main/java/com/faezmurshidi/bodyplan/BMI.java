@@ -70,6 +70,10 @@ public class BMI extends MainActivity {
 
         double bmr = 0;
 
+        //Adult Body Fat % = (1.20 x BMI) + (0.23 x Age) – (10.8 x gender) – 5.4
+
+       // using gender male= 1, female= 0.
+
 
         switch (sex){
             case "Male":bmr = 66.47 + (13.75* fweight) + (5 + fheight) - (6.75 * age);

@@ -47,6 +47,7 @@ public class weightmanagement extends Fragment {
        Float wat = sp.getFloat("water", 100);
 
         String status = sp.getString("bmi_status", "170");
+
         Float calorie = sp.getFloat("bmr", 5000);
 
         String lose_gain = sp.getString("lose_gain", "to");

@@ -31,6 +31,9 @@
         <activity android:name=".Motivation"/>
         <activity android:name=".FoodScanner"/>
         <activity android:name=".BMI"/>
+        <activity android:name=".workoutlist"/>
+        <activity android:name=".Workout"/>
+        <activity android:name=".startWorkout"/>
 
     </application>
 

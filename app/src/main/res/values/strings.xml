@@ -6,6 +6,25 @@
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
 
+        <string-array name="workoutTitle">
+                <item>Body Alarm HIIT Morning Workout</item>
+        </string-array>
+
+    <string name="workoutOne">
+        Workout details:\n
+        1 minute stretching.\n
+        1 minute each of:\n
+        - Push up\n
+        - Jumping jacks.\n
+        - Mountain climbers.\n
+        - Burpees.\n
+        - Squat/Jump squat.\n
+        - Plank.\n
+        with 30seconds rest interval between exercises.\n
+        *it is a high intensity training. do as much rep as you can.*
+
+    </string>
+
     <string-array name="inspiration">
 
         <item>Indeed, Allah will not change the condition of a people until they change what is in themselves. -Qur’an, 13:11</item>

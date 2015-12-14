@@ -75,22 +75,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent = null;
 
 
-
-
-
-        if (mSelectedId == R.id.navigation_item_3) {
+        if (mSelectedId == R.id.navigation_item_1) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
             intent = new Intent(this, MainTab.class);
             startActivity(intent);
         }
-        if (mSelectedId == R.id.navigation_item_1) {
+
+
+        if (mSelectedId == R.id.navigation_item_3) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
             intent = new Intent(this, FoodScanner.class);
             startActivity(intent);
         }
+
         if (mSelectedId == R.id.navigation_item_4) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, FoodScanner.class);
+            intent = new Intent(this, workoutlist.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_5) {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         if (mSelectedId == R.id.navigation_item_6) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            intent = new Intent(this, Motivation.class);
+            intent = new Intent(this, About.class);
             startActivity(intent);
         }
         if (mSelectedId == R.id.navigation_item_7) {

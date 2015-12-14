@@ -86,7 +86,7 @@ public class MainTab extends MainActivity {
 
         names.setText(name);
         ages.setText(age + " , " + sex);
-      
+
 
 
         

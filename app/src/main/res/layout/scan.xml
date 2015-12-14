@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context="com.javacodegeeks.androidstartactivityforresultexample.ActivityOne" >
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:id="@+id/space5" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -17,18 +22,6 @@
         android:text="Scan Food"
         android:textColor="#000000"
         android:textSize="30dp" />
-
-    <Button
-        android:id="@+id/scanner"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:onClick="scanQR"
-        android:text="QR Code"
-        android:textSize="18dp" >
-    </Button>
 
     <Button
         android:id="@+id/scanner2"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listentries">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+    <string-array name="listvalues">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <array name="workoutlist">
+        <item>High Knees</item>
+        <item>Push Up</item>
+        <item>Jumping Jacks</item>
+        <item>Mountain Climbers</item>
+        <item>Burpees</item>
+        <item>Squat</item>
+        <item>Plank</item>
+    </array>
+
+    <array name="workoutdesc">
+        <item>1. In basic high knees, you need to stand still with your feet hip-width apart. Pull your right knee towards your chest and keep it there for 3 seconds. Now move it back to the original position and then repeat the step.
+            Now do the same gesture with the left knee and do several repetitions. You will feel exhausted after half an hour or before. Take 2 minutes rest between the repetitions to increase your tendency to do more repetitions.
+            After a few weeks, you will feel that your body is getting no more effect from the exercise. This will be the time for moving towards the next phase of high knees.</item>
+        <item>1.Get on the floor and position your hands slightly wider than your shoulders.\n
+            2.Raise up onto your toes so you are balanced on your hands and toes.\n
+            3.Keep your body in a straight line from head to toe without sagging in the middle or arching your back.\n
+            4.Your feet can be close together or a bit wider depending upon what is most comfortable for you.\n
+            5.Before you begin any movement, contract your abs and tighten your core by pulling your belly button toward your spine.\n
+            6.Keep a tight core throughout the entire push up.\n
+            7.Inhale as you slowly bend your elbows and lower yourself until your elbows are at a 90 degree angle.\n
+            8.Exhale as you begin pushing back up to the start position\n</item>
+        <item>1.Assume an erect position, with feet together and arms at your side.\n
+            2.Slightly bend your knees, and propel yourself a few inches into the air.\n
+            3.While in air, bring your legs out to the side about shoulder width or slightly wider.
+            4.As you are moving your legs outward, you should raise your arms up over your head; arms should be slightly bent throughout the entire in-air movement.\n
+            5.Your feet should land shoulder width or wider as your hands meet above your head with arms slightly bent.\n
+            6.Quickly jump back to Step 2 and repeat Steps 3-6.</item>
+        <item>@array/Mountainclimbers</item>
+        <item>
+            1.Stand straight, then lower into a squat position with your hands on the floor in front of you.\n
+            2.Kick your feet back into a push-up position and immediately drop your chest to the floor.\n
+            3.Bow your chest up as you return your feet back to the squat position as fast as possible.\n</item>
+        <item>1.Stand tall with your feet hip width apart and your arms down by your side.\n
+            2.Start to lower your body back as far as you can by pushing your hips back and bending your knees and pushing your body weight into your heels.\n
+            3.As you are lowering into the squat your arms will start to raise out in front of you for balance\n
+            4.Keep a neutral spine at all times and never let your knees go over your toes\n
+            5.The lower body should be parallel with the floor and your chest should be lifted at all times not rounded.\n
+            6.Pause then lift back up in a controlled movement to the starting position\n</item>
+        <item>1.Start off on a yoga mat in the pushup position. Starting with the pushup position is the easiest way to get into the plank.\n
+            2.Lower both your forearms to the ground so that both your elbows and fists are flat to the ground. Your palms should be balled up, and directly underneath your shoulders.\n
+            3.Curl your toes under and engage your abs by tilting your pelvis and pulling your belly button toward your spine.\n
+            4.Straighten your body but keep your neck and spine neutral. Imagine that you’re a plank of wood, and that you’re straight as an arrow.\n
+            5.Flex your abdominals and squeeze your glutes. These are the two major muscle groups you’ll be working out in this exercise.\n
+            6.Hold this position, also known as the plank, until after the burning begins. Keep your eyes on the floor in front of you. Avoid raising your behind. Your body should make a straight line from your heels to the back of your head.\n</item>
+    </array>
+    <array name="Mountainclimbers">
+        <item>1. Assume a press up position so your hands are directly under your chest at shoulder width apart with straight arms</item>
+        <item>2. Your body should form a straight line from your shoulders to your ankles</item>
+        <item>3. Lift your right foot off the floor and slowly raise your knee as close to your chest as you can</item>
+        <item>4. Return to the starting position and repeat with your left leg</item>
+        <item>5. Continue alternating for the desired number of reps or time</item>
+    </array>
+
+</resources>
