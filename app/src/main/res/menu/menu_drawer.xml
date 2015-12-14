@@ -19,7 +19,7 @@
     <item
         android:id="@+id/navigation_item_5"
         android:icon="@drawable/ic_motivation"
-        android:title="Motivation" />
+        android:title="M.O.T.D" />
     <item
         android:id="@+id/navigation_item_6"
         android:icon="@drawable/ic_share"

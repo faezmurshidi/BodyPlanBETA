@@ -49,6 +49,7 @@ public class weightmanagement extends Fragment {
         String status = sp.getString("bmi_status", "170");
 
         Float calorie = sp.getFloat("bmr", 5000);
+        Float bmi = sp.getFloat("bmi", 5000);
 
         String lose_gain = sp.getString("lose_gain", "to");
         Float lose_gain_value = sp.getFloat("lose_gain_value", 20);
@@ -63,6 +64,10 @@ public class weightmanagement extends Fragment {
         TextView lolgainval = (TextView)myView.findViewById(R.id.lose_gain_value);
         TextView lolgain = (TextView)myView.findViewById(R.id.lose_gain);
 
+       // Adult Body Fat % = (1.20 x BMI) + (0.23 x Age) – (10.8 x gender) – 5.4
+
+       // using gender male= 1, female= 0.
+
 
         water.setText(String.format("%.2f", wat));
 
@@ -70,7 +75,7 @@ public class weightmanagement extends Fragment {
         ed.setText(weight);
         ed2.setText(height);
 
-        textBMI.setText(status);
+        textBMI.setText(String.format("%.2f", wat)+"|"+status);
         textCal.setText(String.format("%.2f", calorie));
 
 
