@@ -19,14 +19,29 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"
         android:layout_margin="20dp"
-        android:text="Scan Food"
+        android:text="Food Nutrition Details"
         android:textColor="#000000"
         android:textSize="30dp" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showfact"/>
+
     <Button
         android:id="@+id/scanner2"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:gravity="center"
@@ -39,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Product:"
+        android:text="Nutritional Sumary"
         android:id="@+id/textView3"
         android:layout_gravity="center_horizontal" />
 

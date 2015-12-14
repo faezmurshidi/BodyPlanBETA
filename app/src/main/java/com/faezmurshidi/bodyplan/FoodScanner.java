@@ -85,12 +85,22 @@ public class FoodScanner extends MainActivity{
                 String name = null,energy = null,fat = null,prot,carb= null;
 
                 if(contents.equals("9556001219824")){
-                    name="nescafe";fat="2.2g";energy="87kcal";carb="16.0g";
+                    name="3 in 1 nescafe";fat="2.2g";energy="87kcal";carb="16.0g";
                 }
 
-                String set = "Content="+ contents+"\nName=" + name+"\nFat="+fat+"\nEnergy="+energy+"\nCarbohydrate="+carb;
+                String set = "Content="+ contents+"\nName=" + name+"\nFat="+fat+"\nCalorie="+energy+"\nCarbohydrate="+carb;
                 show.setText(set);
             }
         }
+    }
+
+    public void showfact(View view) {
+        TextView show = (TextView)findViewById(R.id.showprod);
+
+
+
+        String set = "\nName= Nasi Lemak" +"\nFat=12.39g"+"\nCalorie=348"+"\nCarbohydrate=50.58";
+        show.setText(set);
+
     }
 }

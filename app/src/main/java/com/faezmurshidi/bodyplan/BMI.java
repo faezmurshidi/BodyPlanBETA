@@ -58,7 +58,7 @@ public class BMI extends MainActivity {
 
     }
 
-    private void getCalorie(float fheight, float fweight, String sex, int age) {
+    private void getCalorie(float fheight, float fweight, String sex, int age,double bmi) {
 
         /*FORMULA FOR BMR:
         W = weight in kilograms (weight (lbs)/2.2) =weight in kg
@@ -69,6 +69,7 @@ public class BMI extends MainActivity {
         Women: BMR=665.09 + (9.56 x W) + (1.84 x H) - (4.67 x A)*/
 
         double bmr = 0;
+        double fat=0;
 
         //Adult Body Fat % = (1.20 x BMI) + (0.23 x Age) – (10.8 x gender) – 5.4
 
@@ -76,12 +77,17 @@ public class BMI extends MainActivity {
 
 
         switch (sex){
-            case "Male":bmr = 66.47 + (13.75* fweight) + (5 + fheight) - (6.75 * age);
+            case "Male":
+                bmr = 66.47 + (13.75* fweight) + (5 + fheight) - (6.75 * age);
+                fat=(1.20*bmi) + (0.23*age)-(10.8 *1)-5.4;
                 break;
             case "Feemale":bmr=665.09 + (9.56 * fweight) + (1.84 * fheight) - (4.67 * age);
+                fat=(1.20*bmi) + (0.23*age)-(10.8 *0)-5.4;
+                break;
         }
 
         edit.putFloat("bmr", (float) bmr);
+        edit.putFloat("fat", (float) fat);
 
     }
 
@@ -164,7 +170,7 @@ public class BMI extends MainActivity {
 
         calculateBMI(fweight, fheight);
 
-        getCalorie(fheight, fweight, sex, age);
+        getCalorie(fheight, fweight, sex, age,bmi);
 
         getWater(fweight);
 
